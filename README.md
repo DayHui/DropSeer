@@ -71,15 +71,23 @@ git push -u origin main
 - 敏感信息纪律：公众号 AppID/AppSecret、`.env` 一律不入库（见 `.gitignore`）
 - 后续可拆分：定稿文章/配套资料另开**公开**仓库（对应"观测协议开源"计划），策略与规划留在私有库
 
-## 英文名备选（供决策）
+## 英文名备选（供决策 · 2026-09-26 核验 GitHub 命名空间）
 
-| 候选 | 说明 |
-|---|---|
-| **DropScope**（推荐） | 水滴+观测镜；短、好记、双关（scope=观测镜/范围）；可作 GitHub org / handle |
-| DropWatch | 更偏"持续监测"的语义，也不错 |
-| Droplet Observatory | 最直白正式，适合英文 About 页署名，但偏长 |
-| Hydroscope | 真实仪器名（湿度观测器），专业但生僻 |
+| 候选 | 含义 | 气质 | GitHub |
+|---|---|---|---|
+| **DropProbe** | 水滴 + 探针 | 最贴"试探/测试"——探针是测试与可观测性的一等词 | ✅ 空闲 |
+| **DropLens** | 水滴 + 透镜 | 视觉最干净，"看透光滑外壳下的纹路" | ✅ 空闲 |
+| **DropSeer** | 水滴 + 观测者 | 直取"观测站"的观测；略带先知感 | ✅ 空闲 |
+| **DropSonar** | 水滴 + 声呐 | 探测不可见之物，工程感强 | ✅ 空闲 |
+| **DropGauge** | 水滴 + 量规 | 最偏"度量"，对应质量度量支柱 | ✅ 空闲 |
+| **DewScope** | 露珠 + 观测镜 | 比 Drop 更清冷诗意 | ✅ 空闲 |
+| DropScope（原推荐） | 水滴 + 观测镜 / 范围 | 均衡好记，双关 | ⚠️ org 命名空间已被占（作仓库名无碍） |
+| DropTrace / DropWatch / DropSignal / DropBeacon | — | — | ❌ 已被占 |
 
-注意：英文勿用 Waterdrop——国内"水滴"已是知名保险/众筹品牌，会撞车。
+说明：
+- 英文勿用 Waterdrop——国内"水滴"已是知名保险/众筹品牌，会撞车
+- ⚠️ DropScope 作为 GitHub **org** 已被一个空组织占号，但作为你账号下的**仓库名**没问题
+- 域名可用性需在注册商处另行查询（本次未核验）
+- 不带 Drop 的备选（未核验）:StillWater（静水流深，"冷静观测者"）、Hydroscope（真实湿度观测仪器名，专业但生僻）、Droplet Observatory（最正式，偏长）
 
-英文名将来的用武之地：观测协议开源的 GitHub 仓库（如 dropscope/observation-protocol）、配图水印、素材文件前缀（dropscope-001-cover.png）、海外同名账号。
+将来的用武之地：观测协议开源的 GitHub 仓库（如 dropprobe/observation-protocol）、配图水印、素材文件前缀（dropprobe-001-cover.png）、海外同名账号。
