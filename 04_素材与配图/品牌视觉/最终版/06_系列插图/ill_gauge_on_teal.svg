@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <rect width="240" height="240" fill="#16404D"/>
+  <path d="M 50.0 150.0 L 50.1 145.4 L 50.6 140.9 L 51.3 136.3 L 52.4 131.9 L 53.7 127.5 L 55.3 123.2 L 57.2 119.0 L 59.4 115.0 L 61.8 111.1 L 64.5 107.4 L 67.4 103.8 L 70.5 100.5 L 73.8 97.4 L 77.4 94.5 L 81.1 91.8 L 85.0 89.4 L 89.0 87.2 L 93.2 85.3 L 97.5 83.7 L 101.9 82.4 L 106.3 81.3 L 110.9 80.6 L 115.4 80.1 L 120.0 80.0 L 124.6 80.1 L 129.1 80.6 L 133.7 81.3 L 138.1 82.4 L 142.5 83.7 L 146.8 85.3 L 151.0 87.2 L 155.0 89.4 L 158.9 91.8 L 162.6 94.5 L 166.2 97.4 L 169.5 100.5 L 172.6 103.8 L 175.5 107.4 L 178.2 111.1 L 180.6 115.0 L 182.8 119.0 L 184.7 123.2 L 186.3 127.5 L 187.6 131.9 L 188.7 136.3 L 189.4 140.9 L 189.9 145.4 L 190.0 150.0" fill="none" stroke="#F4F6F4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="64.0" y1="150.0" x2="54.0" y2="150.0" stroke="#F4F6F4" stroke-width="5" stroke-linecap="round"/>
+  <line x1="120.0" y1="94.0" x2="120.0" y2="84.0" stroke="#F4F6F4" stroke-width="5" stroke-linecap="round"/>
+  <line x1="176.0" y1="150.0" x2="186.0" y2="150.0" stroke="#F4F6F4" stroke-width="5" stroke-linecap="round"/>
+  <line x1="120.0" y1="150.0" x2="165.9" y2="117.9" stroke="#F4F6F4" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="120.0" cy="150.0" r="7.0" fill="#F4F6F4"/>
+</svg>

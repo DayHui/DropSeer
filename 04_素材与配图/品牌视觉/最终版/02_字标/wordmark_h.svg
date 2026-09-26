@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 196">
+  
+  <text x="310" y="104" text-anchor="middle" font-family="'Noto Sans SC','Source Han Sans SC','Microsoft YaHei',sans-serif" font-weight="900" font-size="58" letter-spacing="7" fill="#16404D">水滴观测站</text>
+  <line x1="190.0" y1="134.0" x2="430.0" y2="134.0" stroke="#16404D" stroke-width="1.10" opacity="0.85"/><line x1="190.0" y1="129.5" x2="190.0" y2="138.5" stroke="#16404D" stroke-width="1.10" opacity="0.85"/><line x1="310.0" y1="129.5" x2="310.0" y2="138.5" stroke="#16404D" stroke-width="1.10" opacity="0.85"/><line x1="430.0" y1="129.5" x2="430.0" y2="138.5" stroke="#16404D" stroke-width="1.10" opacity="0.85"/>
+  <text x="310" y="162" text-anchor="middle" font-family="'Helvetica Neue',Arial,sans-serif" font-size="12.6" letter-spacing="5.4" fill="#16404D" opacity="0.75">DROPSEER</text>
+</svg>
