@@ -67,7 +67,7 @@ dropseer/
 
 ## 英文名（已定案 · 2026-09-26）
 
-**DropSeer** —— 水滴（Drop）+ 观测者（Seer）。直取"观测站"里的"观测"，seer 指"能看见别人看不见之物"，与"黑盒之外的观测者"人设一致。GitHub 命名空间 `dropseer` 已核验空闲。
+**DropSeer** —— 水滴（Drop）+ 观测者（Seer）。直取"观测站"里的"观测"，seer 指"能看见别人看不见之物"，与"黑盒之外的观测者"人设一致。
 
 用法约定：
 
@@ -75,20 +75,3 @@ dropseer/
 - 仓库：`dropseer`（私有，策略与规划）；将来"观测协议开源"另开**公开**仓库 `dropseer/observation-protocol`
 - 素材文件前缀：`dropseer-001-cover.png`
 - 配图水印、英文 About 页署名
-
-### 附：候选评估记录（备查）
-
-| 候选 | 含义 | GitHub（2026-09-26 核验） |
-|---|---|---|
-| **DropSeer**（✅ 定案） | 水滴 + 观测者 | ✅ 空闲 |
-| DropProbe | 水滴 + 探针（最贴测试） | ✅ 空闲 |
-| DropLens | 水滴 + 透镜 | ✅ 空闲 |
-| DropSonar | 水滴 + 声呐 | ✅ 空闲 |
-| DropGauge | 水滴 + 量规 | ✅ 空闲 |
-| DewScope | 露珠 + 观测镜 | ✅ 空闲 |
-| DropScope | 水滴 + 观测镜 | ⚠️ org 已被占 |
-| DropTrace / DropWatch / DropSignal / DropBeacon | — | ❌ 已被占 |
-
-- 英文勿用 Waterdrop——国内"水滴"已是知名保险/众筹品牌，会撞车
-- 未核验备选：StillWater（静水流深）、Hydroscope（真实仪器名）、Droplet Observatory（正式但偏长）
-- 域名可用性需在注册商处查询（本次未核验）
