@@ -1,6 +1,7 @@
 # 水滴观测站 · 项目说明
 
-> 公众号「水滴观测站」的专属项目库。2026-09-26 立项，本地路径 `C:\code\personal\dropseer`，Git 管理，待推 GitHub（建议私有仓库）。
+> 公众号「水滴观测站」的专属项目库。2026-09-26 立项，本地路径 `C:\code\personal\dropseer`，Git 管理。
+> 远程仓库：git@github.com:DayHui/DropSeer.git（2026-09-26 已建仓并完成首次推送）。
 > 英文名（2026-09-26 定案）：**DropSeer** —— 水滴（Drop）+ 观测者（Seer）。GitHub 命名空间 `dropseer` 已核验空闲。
 
 ## 项目是什么
@@ -64,23 +65,15 @@ dropseer/
 
 ## 当前状态（2026-09-26）
 
-- 立项完成，全部方案与草稿已归档入库（首轮提交完成）
+- 立项完成，全部方案与草稿已归档入库；**GitHub 仓库已建并完成首次推送**（`DayHui/DropSeer`，main 分支跟踪已建立）
 - **英文名定案：DropSeer**（GitHub 命名空间空闲），项目目录同步为 `C:\code\personal\dropseer`
 - 001 发布版草稿 v0.9 已过四道质检，等老板通读定稿
-- 待办：①首图 AI 生成（方向稿）②公众号 AppID/AppSecret 配置（推草稿箱）③热点周报试刊 ④GitHub 建仓并推送
+- 待办：①首图 AI 生成（方向稿）②公众号 AppID/AppSecret 配置（推草稿箱）③热点周报试刊
 
 ## 版本管理
 
 - 本地仓库：`C:\code\personal\dropseer`（分支 main，已初始化 Git）
-- 远程仓库：待建（建议在 GitHub 新建**私有**仓库 `dropseer`，含内容策略与选题库，私有更稳妥；`dropseer` 命名空间已验证空闲）
-
-首次推送命令（仓库建好后执行）：
-
-```bash
-cd C:\code\personal\dropseer
-git remote add origin git@github.com:DayHui/dropseer.git   # 换成实际仓库地址
-git push -u origin main
-```
+- 远程仓库：`git@github.com:DayHui/DropSeer.git`（2026-09-26 老板建仓，已完成 `push -u origin main`，跟踪关系建立）
 
 - 敏感信息纪律：公众号 AppID/AppSecret、`.env` 一律不入库（见 `.gitignore`）
 - 后续可拆分：定稿文章/配套资料另开**公开**仓库（对应"观测协议开源"计划），策略与规划留在私有库
