@@ -1,18 +1,18 @@
 # 水滴观测站 · 项目说明
 
-> 公众号「水滴观测站」的专属项目库。2026-09-26 立项，本地路径 `C:\code\personal\dropscope`，Git 管理，待推 GitHub（建议私有仓库）。
-> 英文名（建议，待老板确认）：**DropScope** —— 水滴（Drop）+ 观测镜（Scope）。
+> 公众号「水滴观测站」的专属项目库。2026-09-26 立项，本地路径 `C:\code\personal\dropseer`，Git 管理，待推 GitHub（建议私有仓库）。
+> 英文名（2026-09-26 定案）：**DropSeer** —— 水滴（Drop）+ 观测者（Seer）。GitHub 命名空间 `dropseer` 已核验空闲。
 
 ## 项目是什么
 
 以工程师视角，试探、观测、核验大模型与 Agent 背后的风险——做黑盒之外冷静的观测者。
 个人 IP 项目：作者 = ICT 通信行业 E2E 测试 Agent 一线工程师。
-Tagline（英文备选）：*Observe the black box.*
+Tagline：*Observe the black box.*
 
 ## 目录结构
 
 ```
-dropscope/
+dropseer/
 ├─ README.md                    本文件：项目总览与导航
 ├─ 00_项目纪要/                  立项与重大决策记录
 │   └─ 2026-09-26 项目启动纪要.md  立项日：全部方案与结论汇总、待办清单
@@ -52,42 +52,50 @@ dropscope/
 ## 当前状态（2026-09-26）
 
 - 立项完成，全部方案与草稿已归档入库（首轮提交完成）
+- **英文名定案：DropSeer**（GitHub 命名空间空闲），项目目录同步为 `C:\code\personal\dropseer`
 - 001 发布版草稿 v0.9 已过四道质检，等老板通读定稿
-- 待办：①首图 AI 生成（方向稿）②公众号 AppID/AppSecret 配置（推草稿箱）③热点周报试刊 ④GitHub 建仓并推送 ⑤英文名定案
+- 待办：①首图 AI 生成（方向稿）②公众号 AppID/AppSecret 配置（推草稿箱）③热点周报试刊 ④GitHub 建仓并推送
 
 ## 版本管理
 
-- 本地仓库：`C:\code\personal\dropscope`（分支 main，已初始化 Git）
-- 远程仓库：待建（建议在 GitHub 新建**私有**仓库 `dropscope`，含内容策略与选题库，私有更稳妥）
+- 本地仓库：`C:\code\personal\dropseer`（分支 main，已初始化 Git）
+- 远程仓库：待建（建议在 GitHub 新建**私有**仓库 `dropseer`，含内容策略与选题库，私有更稳妥；`dropseer` 命名空间已验证空闲）
 
 首次推送命令（仓库建好后执行）：
 
 ```bash
-cd C:\code\personal\dropscope
-git remote add origin git@github.com:DayHui/dropscope.git   # 换成实际仓库地址
+cd C:\code\personal\dropseer
+git remote add origin git@github.com:DayHui/dropseer.git   # 换成实际仓库地址
 git push -u origin main
 ```
 
 - 敏感信息纪律：公众号 AppID/AppSecret、`.env` 一律不入库（见 `.gitignore`）
 - 后续可拆分：定稿文章/配套资料另开**公开**仓库（对应"观测协议开源"计划），策略与规划留在私有库
 
-## 英文名备选（供决策 · 2026-09-26 核验 GitHub 命名空间）
+## 英文名（已定案 · 2026-09-26）
 
-| 候选 | 含义 | 气质 | GitHub |
-|---|---|---|---|
-| **DropProbe** | 水滴 + 探针 | 最贴"试探/测试"——探针是测试与可观测性的一等词 | ✅ 空闲 |
-| **DropLens** | 水滴 + 透镜 | 视觉最干净，"看透光滑外壳下的纹路" | ✅ 空闲 |
-| **DropSeer** | 水滴 + 观测者 | 直取"观测站"的观测；略带先知感 | ✅ 空闲 |
-| **DropSonar** | 水滴 + 声呐 | 探测不可见之物，工程感强 | ✅ 空闲 |
-| **DropGauge** | 水滴 + 量规 | 最偏"度量"，对应质量度量支柱 | ✅ 空闲 |
-| **DewScope** | 露珠 + 观测镜 | 比 Drop 更清冷诗意 | ✅ 空闲 |
-| DropScope（原推荐） | 水滴 + 观测镜 / 范围 | 均衡好记，双关 | ⚠️ org 命名空间已被占（作仓库名无碍） |
-| DropTrace / DropWatch / DropSignal / DropBeacon | — | — | ❌ 已被占 |
+**DropSeer** —— 水滴（Drop）+ 观测者（Seer）。直取"观测站"里的"观测"，seer 指"能看见别人看不见之物"，与"黑盒之外的观测者"人设一致。GitHub 命名空间 `dropseer` 已核验空闲。
 
-说明：
+用法约定：
+
+- GitHub 组织 / 账号：`dropseer`
+- 仓库：`dropseer`（私有，策略与规划）；将来"观测协议开源"另开**公开**仓库 `dropseer/observation-protocol`
+- 素材文件前缀：`dropseer-001-cover.png`
+- 配图水印、英文 About 页署名
+
+### 附：候选评估记录（备查）
+
+| 候选 | 含义 | GitHub（2026-09-26 核验） |
+|---|---|---|
+| **DropSeer**（✅ 定案） | 水滴 + 观测者 | ✅ 空闲 |
+| DropProbe | 水滴 + 探针（最贴测试） | ✅ 空闲 |
+| DropLens | 水滴 + 透镜 | ✅ 空闲 |
+| DropSonar | 水滴 + 声呐 | ✅ 空闲 |
+| DropGauge | 水滴 + 量规 | ✅ 空闲 |
+| DewScope | 露珠 + 观测镜 | ✅ 空闲 |
+| DropScope | 水滴 + 观测镜 | ⚠️ org 已被占 |
+| DropTrace / DropWatch / DropSignal / DropBeacon | — | ❌ 已被占 |
+
 - 英文勿用 Waterdrop——国内"水滴"已是知名保险/众筹品牌，会撞车
-- ⚠️ DropScope 作为 GitHub **org** 已被一个空组织占号，但作为你账号下的**仓库名**没问题
-- 域名可用性需在注册商处另行查询（本次未核验）
-- 不带 Drop 的备选（未核验）:StillWater（静水流深，"冷静观测者"）、Hydroscope（真实湿度观测仪器名，专业但生僻）、Droplet Observatory（最正式，偏长）
-
-将来的用武之地：观测协议开源的 GitHub 仓库（如 dropprobe/observation-protocol）、配图水印、素材文件前缀（dropprobe-001-cover.png）、海外同名账号。
+- 未核验备选：StillWater（静水流深）、Hydroscope（真实仪器名）、Droplet Observatory（正式但偏长）
+- 域名可用性需在注册商处查询（本次未核验）
