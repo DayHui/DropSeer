@@ -10,6 +10,16 @@ SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
 cd "$SCRIPT_DIR/.." || exit 1
 ENV_FILE=".env.secret"
 
+# 微信同一时刻只保留一个有效 access_token：本脚本自己取一次，就会顶掉 wenyan 缓存的 token，
+# 导致紧接着 publish 报 40001。故脚本收尾时清掉 wenyan 的 token 缓存，强制它下次重新获取。
+purge_wenyan_token() {
+  local f="$APPDATA/wenyan-md/token.json"
+  [ -f "$f" ] || f="/c/Users/17783/AppData/Roaming/wenyan-md/token.json"
+  if [ -f "$f" ]; then
+    rm -f "$f" && echo "（已清除 wenyan 的 token 缓存，避免下次 publish 报 40001）"
+  fi
+}
+
 if [ ! -f "$ENV_FILE" ]; then
   echo "[FAIL] 找不到 $ENV_FILE（应含 WECHAT_APP_ID / WECHAT_APP_SECRET）"
   exit 1
@@ -26,8 +36,25 @@ echo "---- 请求 access_token ----"
 RESP=$(curl -s --max-time 25 "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${APP_ID}&secret=${APP_SECRET}")
 
 if echo "$RESP" | grep -q '"access_token"'; then
-  echo "[OK] 凭证与白名单均已就绪，access_token 获取成功（不打印 token 本身）"
-  exit 0
+  echo "[1/2 OK] 凭证与白名单均已就绪，access_token 获取成功（不打印 token 本身）"
+  TOKEN=$(echo "$RESP" | sed -n 's/.*"access_token":"\([^"]*\)".*/\1/p')
+  echo "---- 探测草稿箱接口权限（只读 draft/count，不创建任何内容）----"
+  RESP2=$(curl -s --max-time 25 "https://api.weixin.qq.com/cgi-bin/draft/count?access_token=${TOKEN}")
+  echo "原始返回：$RESP2"
+  if echo "$RESP2" | grep -q '"total_count"'; then
+    echo "[2/2 OK] 草稿箱接口可用 → 可以直接推草稿箱（手册 §二 路径 A）"
+    purge_wenyan_token
+    exit 0
+  fi
+  CODE2=$(echo "$RESP2" | sed -n 's/.*"errcode":\([0-9-]*\).*/\1/p')
+  case "$CODE2" in
+    48001) echo "[2/2 FAIL] 48001 接口未授权 → 该账号无草稿箱接口权限（未认证常见），改走 §二 路径 B（render + 手动粘贴）" ;;
+    45009) echo "[2/2 WARN] 45009 接口调用频率超限，稍后再试" ;;
+    40001) echo "[2/2 FAIL] 40001 token 无效（可能被别处刷新覆盖），重跑本脚本即可" ;;
+    *)     echo "[2/2 ?] 未识别返回，把原始返回贴给项目助手" ;;
+  esac
+  purge_wenyan_token
+  exit 1
 fi
 
 echo "原始返回：$RESP"
