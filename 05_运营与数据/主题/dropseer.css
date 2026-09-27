@@ -1,0 +1,166 @@
+/* ------------------------------------------------------------------
+   水滴观测站 · 公众号正文主题（品牌视觉 v2 对齐版）
+   ------------------------------------------------------------------
+   用法：wenyan publish -f 稿件.md -t lapis -c 05_运营与数据/主题/dropseer.css
+        （-c 会**替代**内置主题，所以本文件必须覆盖全部元素，否则该元素将无样式）
+
+   设计原则（为什么这样才"高级"）：
+   1. 底白字墨，只用灰度层次 + 一条琥珀细线，不用蓝/绿色块（内置主题的色块是"土"的根源）；
+   2. 靠留白与细线建立秩序：章节标题下方细线、引用块左侧竖线、表格只留横线；
+   3. 琥珀 #B05A1F 是品牌唯一暖色，只出现在二级标题的左竖线上，作风险信号式的点缀；
+   4. 行高 1.85 + 段间距 1.45em，微信长文阅读的舒适区；
+   5. 全部为简单选择器（无伪类、无 flex、无 position），避免被微信编辑器清洗。
+   ------------------------------------------------------------------ */
+
+/* 站内文字基准
+   注意：wenyan 的内联器**不处理根元素 section 的样式**（实测 -c 时 section 只保留
+   wenyan 自带的 color/caret-color），所以字号/行高/字间距必须逐块元素写全。 */
+section {
+  font-size: 16px;
+  line-height: 1.85;
+  color: #0E1418;
+  letter-spacing: 0.02em;
+  word-break: break-word;
+}
+
+/* 段落：靠间距而非缩进做呼吸；基础字体三件套在这里给全 */
+p {
+  margin: 1.45em 0;
+  font-size: 16px;
+  line-height: 1.85;
+  color: #0E1418;
+  letter-spacing: 0.02em;
+}
+
+/* 一级标题（章节）：墨色 + 下方细线，居中改为左对齐更利落 */
+h1 {
+  margin: 2.4em 0 1.1em;
+  padding-bottom: 0.5em;
+  font-size: 1.32em;
+  font-weight: 700;
+  color: #0A0F14;
+  border-bottom: 1px solid #E3E8ED;
+  letter-spacing: 0.02em;
+}
+
+/* 二级标题：去掉色块，改左侧琥珀竖线（这是本主题唯一彩色元素） */
+h2 {
+  margin: 2em 0 0.9em;
+  padding-left: 0.7em;
+  font-size: 1.16em;
+  font-weight: 700;
+  color: #0A0F14;
+  border-left: 3px solid #B05A1F;
+  letter-spacing: 0.02em;
+}
+
+/* 三级标题：轻量 */
+h3 {
+  margin: 1.7em 0 0.8em;
+  font-size: 1.04em;
+  font-weight: 700;
+  color: #2A343C;
+}
+
+/* 强调：加粗不加色（颜色留给琥珀，避免全文花） */
+strong {
+  font-weight: 700;
+  color: #0A0F14;
+}
+
+/* 引用块：左侧银线 + 冷雾白底 */
+blockquote {
+  margin: 1.7em 0;
+  padding: 0.95em 1.1em;
+  border-left: 2px solid #C9D2DB;
+  background-color: #F7F9FA;
+  color: #4A555F;
+  border-radius: 0 4px 4px 0;
+}
+blockquote p {
+  margin: 0.45em 0;
+  color: #4A555F;
+}
+
+/* 列表 */
+ul, ol {
+  margin: 1.25em 0;
+  padding-left: 1.4em;
+}
+li {
+  margin: 0.5em 0;
+  line-height: 1.8;
+  color: #0E1418;
+}
+
+/* 表格：只留横线，表头浅灰底（微信里最不容易塌的一种画法） */
+table {
+  width: 100%;
+  margin: 1.7em 0;
+  border-collapse: collapse;
+  font-size: 0.94em;
+}
+th {
+  padding: 0.6em 0.7em;
+  background-color: #F2F5F7;
+  color: #0A0F14;
+  font-weight: 700;
+  text-align: left;
+  border-bottom: 1px solid #DCE3E9;
+}
+td {
+  padding: 0.6em 0.7em;
+  color: #22303A;
+  border-bottom: 1px solid #EDF1F4;
+}
+
+/* 行内代码 */
+code {
+  font-family: Menlo, Consolas, "Courier New", monospace;
+  font-size: 0.9em;
+  color: #0A0F14;
+  background-color: #F2F5F7;
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+/* 代码块 */
+pre {
+  margin: 1.7em 0;
+  padding: 1em 1.1em;
+  background-color: #F7F9FA;
+  border: 1px solid #E3E8ED;
+  border-radius: 6px;
+  font-size: 0.88em;
+  line-height: 1.65;
+  overflow-x: auto;
+}
+pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+}
+
+/* 图片：居中 + 轻圆角 */
+img {
+  display: block;
+  max-width: 100%;
+  margin: 1.8em auto;
+  border-radius: 4px;
+}
+
+/* 链接：极简下划线，不做蓝色 */
+a {
+  color: #0A0F14;
+  text-decoration: none;
+  border-bottom: 1px solid #C9D2DB;
+}
+
+/* 分隔线：短而克制 */
+hr {
+  border: none;
+  border-top: 1px solid #E3E8ED;
+  width: 56%;
+  margin: 2.4em auto;
+}
