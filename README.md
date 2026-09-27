@@ -39,7 +39,14 @@ dropseer/
     ├─ 内容生产SOP.md             单篇全流程：素材→写稿→质检→配图→发布→复盘
     ├─ 热点采集规程.md            周报采集源清单、筛选标准、发布模板
     ├─ 多Agent分工方案.md          六角色拆分与隔离规则（采集/写手/编辑/质检/美术/运营）
-    └─ Agent团队部署指南.md        角色怎么启动：三档形态、派生流程、切换条件
+    ├─ Agent团队部署指南.md        角色怎么启动：三档形态、派生流程、切换条件
+    └─ 外部方法论/                 第三方方法论（只读参考，不就地改）
+        ├─ 采用说明.md             卡兹克 skills 的引入说明、采用边界、维护纪律
+        └─ khazix-skills/          MIT｜khazix-writer / hv-analysis / aihot
+
+.codebuddy/agents/               六个专项角色的定义文件（出厂纪律）
+.workbuddy/skills/
+└─ dropseer-writer/              观测站写稿 skill（文风与四道质检的可执行版）
 ```
 
 ## 六大内容系列（v1.1 朴实命名）
