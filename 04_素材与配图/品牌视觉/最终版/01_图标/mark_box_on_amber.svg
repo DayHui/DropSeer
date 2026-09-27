@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
   <rect width="200" height="200" fill="#B05A1F"/>
-  <line x1="58.0" y1="58.0" x2="84.0" y2="58.0" stroke="#F4F6F4" stroke-width="13" stroke-linecap="round"/>
-  <line x1="116.0" y1="58.0" x2="142.0" y2="58.0" stroke="#F4F6F4" stroke-width="13" stroke-linecap="round"/>
-  <line x1="142.0" y1="58.0" x2="142.0" y2="142.0" stroke="#F4F6F4" stroke-width="13" stroke-linecap="round"/>
-  <line x1="142.0" y1="142.0" x2="58.0" y2="142.0" stroke="#F4F6F4" stroke-width="13" stroke-linecap="round"/>
-  <line x1="58.0" y1="142.0" x2="58.0" y2="58.0" stroke="#F4F6F4" stroke-width="13" stroke-linecap="round"/>
-  <circle cx="100.0" cy="78.0" r="10.0" fill="#F4F6F4"/>
+  <line x1="58.0" y1="58.0" x2="84.0" y2="58.0" stroke="#F7F9FA" stroke-width="13" stroke-linecap="round"/>
+  <line x1="116.0" y1="58.0" x2="142.0" y2="58.0" stroke="#F7F9FA" stroke-width="13" stroke-linecap="round"/>
+  <line x1="142.0" y1="58.0" x2="142.0" y2="142.0" stroke="#F7F9FA" stroke-width="13" stroke-linecap="round"/>
+  <line x1="142.0" y1="142.0" x2="58.0" y2="142.0" stroke="#F7F9FA" stroke-width="13" stroke-linecap="round"/>
+  <line x1="58.0" y1="142.0" x2="58.0" y2="58.0" stroke="#F7F9FA" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="100.0" cy="78.0" r="10.0" fill="#F7F9FA"/>
 </svg>
