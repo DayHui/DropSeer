@@ -146,6 +146,7 @@ agent_created: true
 ```
 
 ## 7. 参考资料
+- `scripts/q1_scan.py`——**Q1 的可执行扫描器**：`python .workbuddy/skills/dropseer-writer/scripts/q1_scan.py <稿件.md>`，自动排除标题/引用块（注入位）/表格/附录，输出禁用词命中、标点统计（含超限提示）、独立成段短句数、正文字数
 - `references/禁用词与套话清单.md`——Q1 的扫描底表（合并上游黑名单与本号补充）
 - `references/风格示例.md`——本号已认可的段落样本，写之前先读，别凭感觉
 - `06_工作流/内容生产SOP.md`——九道工序与三个不可省的人节点
